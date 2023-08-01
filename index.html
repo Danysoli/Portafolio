@@ -19,7 +19,7 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-nav" href="#"><img src="img/logo.png" width="200px" height="50px" alt="Perfil"></a>
+                <a class="navbar-nav" href="#"><img src="img/logo-bck.png" width="200px" height="50px" alt="Perfil"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -29,27 +29,38 @@
                     <div class="navbar-nav">
                         <a class="nav-link" aria-current="page" href="#">Inicio</a>
                         <a class="nav-link" href="#aboutme">Sobre Mi</a>
-                        <a class="nav-link" href="#">Mis Servicios</a>
-                        <a class="nav-link" href="#contact">Contacto</a>
+                        <a class="nav-link" href="#services">Mis Servicios</a>
+                        <a class="nav-link" href="#projets">Mis Proyectos</a>
+                        <button class="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                            Contacto
+                          </button>
                     </div>
                 </div>
             </div>
         </nav>
+        <div class="flex-contact">
+            <a href="https://www.facebook.com/hectordaniel.soliztriveno.7?mibextid=ZbWKwL" target="_blank"><img class="img-style" src="img/facebook.png" alt="facebook" width="40" height="40"></a>
+            <a href="https://w.app/DanStudios" target="_blank"><img class="img-style" src="img/whatsapp.png" alt="whatsapp" width="40" height="40"></a>
+            <a href="https://instagram.com/dannilo_soliz?igshid=MzRlODBiNWFlZA==" target="_blank"><img class="img-style" src="img/instagram.png" alt="instagram" width="40" height="40"></a>
+        </div>
     </header>
 
     <section class="presentation">
-        <div class="presentation-div">
-            <h1 class="animation">Hola Soy Daniel Soliz Desarrollador Front-End</h1>
-            <!-- <h1 class="animation">Desarrollador Front-End</h1> -->
-            <!-- <h2>Estoy aqui para que puedas conocer mis servicios como desarrollador y poder ayudarte con alguna inquitud que presentes</h2> -->
+        <div class="containr">
+            <div class="style-item">
+                <h1 class="animation">Daniel Soliz Desarrollador Front-End</h1>
+            </div>
+            <div class="style-item">
+                <img src="img/retrato.png" alt="retrato">
+            </div>
         </div>
     </section>
 
     <section id="aboutme" class="aboutme">
         <div>
-            <h1 class="pt-4 pb-4 ps-4">Sobre mi</h1>
+            <h1 class="pt-3">Sobre mi</h1>
         </div>
-        <div class="container">
+        <div class="containr">
             <div class="">
                 <p>
                     Desarrollador Front-End alineado a buenas prácticas de ingeniería de software.
@@ -62,24 +73,16 @@
                     tecnologicas, me gusta trabajar en equipo, poder colaborar con mis compañeros y tambien aprender de
                     ellos.
                 </p>
-                <p>
-                    Me considero apasionado por aprender cosas nuevas y siempre trato de estar al pendiente de las
-                    tendencias
-                    tecnologicas, me gusta trabajar en equipo, poder colaborar con mis compañeros y tambien aprender de
-                    ellos.
-                </p>
             </div>
-            <div class="style-retrato">
-                <img src="img/retrato.png" alt="retrato" width="35%" class="mx-auto d-block">
-            </div>
+            
         </div>
     </section>
 
-    <section class="services">
+    <section id="services" class="services">
         <div>
-            <h1 class="pt-4 pb-4 ps-4">Mis Servicios</h1>
+            <h1 class="pt-3 pb-3">Mis Servicios</h1>
         </div>
-        <div class="container">
+        <div class="containr">
             <div class="icon">
                 <div>
                     <img src="img/icons/icon-html5.png" width="70px" height="70px" alt="icon-html5">
@@ -112,51 +115,51 @@
             </div>
         </div>
 
-    </section>
+    </section>   
 
-    
-
-    <section id="contact" class="contact">
+    <section id="projets" class="projets">
         <div>
-            <h1 class="pt-4 pb-4 ps-4">Contacto</h1>
+            <h1 class="pt-3 pb-3">Mis Proyectos</h1>
         </div>
+        <div>
 
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
-            aria-controls="offcanvasScrolling">Escribeme</button>
-
-        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
-            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        </div>
+          <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Escribeme</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <h5 class="offcanvas-title" id="staticBackdropLabel">Consulta tus inquietudes</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
                 <div class="formulario">
                     <form method="post" name="formularioContacto">
-                        <div>
+                        <div class="text-form">
                             <label for="nombre">Nombre:</label>
+                        </div>
+                        <div>
                             <input type="text" id="nombre" name="nombre">
                         </div>
-                        <div>
+                        <div class="text-form">
                             <label for="email">Email:</label>
-                            <input type="email" id="email" name="email">
                         </div>
                         <div>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="text-form">
                             <label for="email">¿Que servicios necesitas?:</label>
-                            <textarea name="textarea" id="textarea" cols="30" rows="15"></textarea>
+                        </div>
+                        <div>
+                            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
                         </div>
                     </form>
                 </div>
             </div>
-        </div>
-        <div class="flex-contact">
-            <a href="https://www.facebook.com/hectordaniel.soliztriveno.7?mibextid=ZbWKwL" target="_blank"><img class="img-style" src="img/facebook.png" alt="facebook" width="40" height="40"></a>
-            <a href="https://w.app/DanStudios" target="_blank"><img class="img-style" src="img/whatsapp.png" alt="whatsapp" width="40" height="40"></a>
-            <a href="https://instagram.com/dannilo_soliz?igshid=MzRlODBiNWFlZA==" target="_blank"><img class="img-style" src="img/instagram.png" alt="instagram" width="40" height="40"></a>
-        </div>
+          </div>
+        
+    </section>
+    <section>
+        
     </section>
     
-
 </body>
 
 </html>

@@ -1,34 +1,35 @@
-* {}
-
 .flex-contact {
-  width: 250px;
-  height: 80px;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  height: 45%;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  margin: 0 auto;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
 }
 
 .flex-contact>a>img {
   border-radius: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 7px;
 }
 
 .aboutme {
+  margin: 30px 0 30px 0;
   background-color: #0B2B4C;
-  padding: 20px;
+  padding: 40px;
 }
 
 .services {
+  margin: 30px 0 30px 0;
   background-color: #3C5899;
-  padding: 20px;
+  padding: 40px;
 }
 
-.navbar-nav>a {
+.navbar-nav {
+  margin-left: 10px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 p {
@@ -36,73 +37,80 @@ p {
   margin-top: 16 !important;
 }
 
-.style-retrato {
+.style-item {
   /* border: solid red 1px; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.style-retrato>img {
+.style-item>img {
   border-radius: 50%;
   width: 25rem;
   height: 25rem;
   object-fit: contain;
-  border: solid white
-    /*#F2CB05*/
-  ;
-  box-shadow: 0 0 20px white;
+  /* border: solid white  #F2CB05; */
+  box-shadow: 0 0 30px rgb(7, 72, 132);
 }
 
-.container {
+.style-item>h1{
+  padding-right: 10rem;
+  position: relative;
+  text-align: end;
+}
+
+.containr {
   display: grid;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 50% 40%;
   justify-content: center;
   column-gap: 2.5rem;
   height: auto;
 }
 
+.nav-link {
+  margin: 0 5px 0 5px;
+  color: black;
+}
+
 .navbar {
+  padding: 5px 0 5px 0;
   position: fixed;
   z-index: 3;
   top: 0;
   left: 0;
   display: flex;
-  background-color: azure;
+  background-color: white;
   align-items: center;
-  /* justify-content: flex-start; */
   width: 100%;
+  opacity: 0.8;
+  box-shadow: 0 0 30px rgb(7, 72, 132);
 }
 
 .presentation {
-  background-color: #205BE5;
-  width: 100%;
-  height: 500px;
+  margin: 30px 0 30px 0;
+  background-color:white;
+  padding-top: 60px;
 }
 
-.presentation-div {
-  /* background-color: red; */
-  width: 40%;
-  height: 250px;
-  position: relative;
-  text-align: start;
-  top: 160px;
-  left: 100px;
+.offcanvas-body, .offcanvas-header {
+  background-color: azure;
+  /* opacity: 0.5; */
 }
 
 .formulario>form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  text-align: end;
+  justify-content: center;
+  text-align: start;
+  margin-left: 30px;
 }
 
-.formulario>form>div {
-  margin: 20px 0 20px 0;
+.text-form {
+  margin: 20px 0 0 0;
 }
 
 .icon {
-  padding-right: 30px;
+  padding: 30px 30px 0 0;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 30% 30% 30%;
@@ -144,9 +152,13 @@ p {
   border-radius: 5%;
 }
 
-.contact {
+.projets {
   background-color: #2D3E66;
+  margin: 30px 0 30px 0;
+  padding: 40px;
 }
+
+
 
 .animation {
   color: hsla(0, 0%, 0%, .9);
@@ -173,16 +185,16 @@ p {
       -1px 1px 0 hsla(180, 100%, 50%, 1);
   }
 
-  /* 25% {    
-      text-shadow:      
-        -4px -4px 0 hsla(180, 100%, 50%, 1), 
-        -3px -3px 0 hsla(180, 100%, 50%, 1), 
-        -2px -2px 0 hsla(180, 100%, 50%, 1), 
+  /* 25% {
+      text-shadow:
+        -4px -4px 0 hsla(180, 100%, 50%, 1),
+        -3px -3px 0 hsla(180, 100%, 50%, 1),
+        -2px -2px 0 hsla(180, 100%, 50%, 1),
         -1px -1px 0 hsla(180, 100%, 50%, 1),
-        4px 4px 0 hsla(0, 100%, 50%, 1), 
-        3px 3px 0 hsla(0, 100%, 50%, 1), 
-        2px 2px 0 hsla(0, 100%, 50%, 1), 
-        1px 1px 0 hsla(0, 100%, 50%, 1)      
+        4px 4px 0 hsla(0, 100%, 50%, 1),
+        3px 3px 0 hsla(0, 100%, 50%, 1),
+        2px 2px 0 hsla(0, 100%, 50%, 1),
+        1px 1px 0 hsla(0, 100%, 50%, 1)
       ;
     } */
   50% {
@@ -199,14 +211,14 @@ p {
 
   /* 75% {
       text-shadow:
-        4px 4px 0 hsla(180, 100%, 50%, 1), 
-        3px 3px 0 hsla(180, 100%, 50%, 1), 
-        2px 2px 0 hsla(180, 100%, 50%, 1), 
+        4px 4px 0 hsla(180, 100%, 50%, 1),
+        3px 3px 0 hsla(180, 100%, 50%, 1),
+        2px 2px 0 hsla(180, 100%, 50%, 1),
         1px 1px 0 hsla(180, 100%, 50%, 1),
-        -4px -4px 0 hsla(0, 100%, 50%, 1), 
-        -3px -3px 0 hsla(0, 100%, 50%, 1), 
-        -2px -2px 0 hsla(0, 100%, 50%, 1), 
-        -1px -1px 0 hsla(0, 100%, 50%, 1)      
+        -4px -4px 0 hsla(0, 100%, 50%, 1),
+        -3px -3px 0 hsla(0, 100%, 50%, 1),
+        -2px -2px 0 hsla(0, 100%, 50%, 1),
+        -1px -1px 0 hsla(0, 100%, 50%, 1)
       ;
     } */
   100% {
